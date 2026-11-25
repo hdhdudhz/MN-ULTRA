@@ -1,0 +1,22 @@
+name: MNULTRA
+options:
+  bundleIdPrefix: com.mnultra
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  MNULTRA:
+    type: application
+    platform: iOS
+    sources:
+      - path: MNULTRA
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mnultra.player
+        PRODUCT_NAME: MN ULTRA
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_KEY_UIBackgroundModes:
+          - audio
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.entertainment
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
